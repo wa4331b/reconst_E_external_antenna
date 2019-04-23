@@ -29,7 +29,7 @@ python makeFFmat.py
 OMP_NUM_THREADS=4 python solveFFmat.py
 ```
 
-Open .pos files with `gmsh`. You will see the surface current distribution as shown:
+Open .pos files in result/ with `gmsh`. You will see the surface current distribution as shown:
 
 <img src="imgs/surface1.norm_J_centroids_triangles.png" width="600px">
 
