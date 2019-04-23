@@ -7,9 +7,16 @@ bash
 conda create -n py36 python=3.6 anaconda
 ```
 
+# Cloning this repository
+
+```
+git clone http://192.168.11.46:8081/snowball/reconst_meas_test.git
+```
+
 # Building libraries
 
 ```
+cd reconst_meas_test
 ./build.sh
 ```
 
