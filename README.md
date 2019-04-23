@@ -28,3 +28,7 @@ python makeFFmat.py
 ```
 OMP_NUM_THREADS=4 python solveFFmat.py
 ```
+
+```
+python computeEobs.py
+```
