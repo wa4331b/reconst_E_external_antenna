@@ -42,7 +42,8 @@ if __name__ == "__main__":
     filepath = "./result"
 
     r_obs, E = ReadData(filepath + "/E_obs_f.txt")
-    PlanarPlot(r_obs, np.linalg.norm(np.asarray(E), axis=0), clim=[0, 1e+4], title="E [V/m]")
+#    PlanarPlot(r_obs, np.linalg.norm(np.asarray(E), axis=0), clim=[0, 1e+4], title="E [V/m]")
+    PlanarPlot(r_obs, np.linalg.norm(np.asarray(E), axis=0), clim=[0, 10], title="E [V/m]")
     plt.savefig(filepath + "/E_obs_f.png")
 
     r_obs, E = ReadData(filepath + "/E_obs_d.txt")
@@ -66,7 +67,8 @@ if __name__ == "__main__":
                        np.logical_and(-0.04 < y_obs, y_obs < 0.04))
     )
     # Enorm = Enorm/np.max(Enorm[np.where(rnorm<0.03)])
-    PlanarPlot(r_obs, Enorm, clim=[0, 1e+4], title="E (normalized)")
+#    PlanarPlot(r_obs, Enorm, clim=[0, 1e+4], title="E (normalized)")
+    PlanarPlot(r_obs, Enorm, clim=[0, 0.1], title="E (normalized)")
     # PlanarPlot(r_obs, np.linalg.norm(np.asarray(E), axis=0), clim=[0, 0.08],
     #            title="E [V/m]", if_clip=True)
     plt.savefig(filepath + "/E_obs_d.png")
