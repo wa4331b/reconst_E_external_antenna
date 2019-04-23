@@ -29,6 +29,21 @@ python makeFFmat.py
 OMP_NUM_THREADS=4 python solveFFmat.py
 ```
 
+Open .pos files with `gmsh`. You will see the surface current distribution as shown:
+
+<img src="imgs/surface1.norm_J_centroids_triangles.png" width="600px">
+
+The near-field distributions can be computed and drawn by running the following command:
+
 ```
 python computeEobs.py
 ```
+
+Check image files in result/.
+
+![](imgs/E_obs_d.png)
+
+# Where is the configuration file?
+
+See:
+* [inputParams/simulation_parameters.py](inputParams/simulation_parameters.py)
