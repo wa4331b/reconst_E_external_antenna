@@ -1,0 +1,5 @@
+*.npy
+*.so
+build/
+__pycache__/
+.cache/
