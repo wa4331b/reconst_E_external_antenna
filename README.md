@@ -47,3 +47,7 @@ Check image files in result/.
 
 See:
 * [inputParams/simulation_parameters.py](inputParams/simulation_parameters.py)
+
+# Credit
+This program is written by S. Omi.
+This document (README.md) is written by Y. Kushiyama.
