@@ -55,6 +55,21 @@ Check image files in result/.
 See:
 * [inputParams/simulation_parameters.py](inputParams/simulation_parameters.py)
 
+# Organization of the code
+The core functions of this simulator are written in C++.
+These files are located in [c++](c++).
+Some of the files are taken from the open source project `Puma-EM`.
+In order to call functions written in C++ from a python script, the following scripts are provided.
+* [setup_E_FF.py](setup_E_FF.py) [setup_poynting.py](setup_poynting.py) [setup_Z_CFIE.py](setup_Z_CFIE.py) [setup_nbin.py](setup_nbin.py) [setup_trans.py](setup_trans.py) [setup_Z_obs.py](setup_Z_obs.py)
+
+These files are executed in build.sh.
+You don't need to run these scripts manually.
+Once you have executed [build.sh](build.sh), you can use C++ functions like the following in [makeFFmat.py](makeFFmat.py).
+
+```python
+from E_FF import Pywrap_compute_FFmat
+```
+
 # Credit
 This program is written by S. Omi.
 This document (README.md) is written by Y. Kushiyama.
