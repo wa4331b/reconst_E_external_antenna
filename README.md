@@ -74,3 +74,4 @@ from E_FF import Pywrap_compute_FFmat
 This program for external antenna is written by S. Omi.
 This document (README.md) is written by Y. Kushiyama.
 The program for internal antenna is modified by R.Hanan and S.Omi
+Please see a different repo for it.
